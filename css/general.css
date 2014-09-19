@@ -1,0 +1,36 @@
+/* CSS */
+
+/* 
+Azul claro: #4d5760
+Azul oscuro: #2c3e50
+Amarillo texto: #ffc356
+Amarillo sólido: #FAB538
+Rojo logo: #e93d3c
+*/
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+*,
+*:after,
+*::before {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+::selection {
+	background-color: rgba(77, 87, 96, .1);
+}
+
+html {font-size: 1em;}
+
+body {
+	color: #41576d;
+	background-color: white;
+	font-family: 'Open Sans', Helvetica,sans-serif;
+	font-weight: 400;
+	line-height: 1.45;
+}
