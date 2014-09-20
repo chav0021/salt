@@ -1,0 +1,12 @@
+// Scroll Nav
+
+$(window).scroll(function() {
+  if($('#main').offset().top === 0) {
+     $('.subheader').fadeIn(600);
+     $('#main').stop().animate({ height: '100px' }, 300).removeClass('stick');
+  }
+  else {
+     $('.subheader').fadeOut(1);
+     $('#main').stop().animate({ height: '50px' }, 300).addClass('stick');
+  }
+});

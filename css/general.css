@@ -28,9 +28,315 @@ Rojo logo: #e93d3c
 html {font-size: 1em;}
 
 body {
-	color: #41576d;
 	background-color: white;
-	font-family: 'Open Sans', Helvetica,sans-serif;
+    background-image: url(../images/saltbg.jpg);
+    background-repeat: no-repeat;
+    background-position: right top;
+    background-size: 100%;
+	font-family: font-family: 'Merriweather', serif;
 	font-weight: 400;
 	line-height: 1.45;
+}
+
+/*Typography*/
+
+p {margin-bottom: 1.3em;}
+
+.p-big {
+    font-size: 1.2em;
+}
+
+h1, h2, h3, h4 {
+  margin: 1.414em 0 0.5em;
+  font-weight: inherit;
+  line-height: 1.2;
+}
+
+h1, .uno {
+  margin-top: 0;
+  font-size: 3.998em;
+}
+
+h2, .dos {font-size: 2.827em;}
+
+h3, .tres {font-size: 1.999em;}
+
+h4, .cuatro {font-size: 1.414em;}
+
+small, .font_small {font-size: 0.707em;}
+
+.inline-block li {
+	display: inline-block;
+}
+
+.right-align {
+	text-align: right;
+}
+
+/* Header & Intro */
+
+header {
+	position: fixed;
+	right: 0;
+	z-index: 9000;
+	width: 100%;
+	background-color: rgba(255,255,255,.5);
+}
+
+.hide-text {
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.flex-img {
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.nav-btn,
+.nav-btn:link,
+.nav-btn:visited{
+	z-index: 9999;
+	display: block;
+	left: 0;
+	height: 30px;
+	width: 30px;
+	background: url('../images/nav.png') no-repeat center center;
+	background-size: 16px; 
+	-webkit-transition: all 300ms ease-in-out;
+    -moz-transition: all 300ms ease-in-out;
+    -o-transition: all 300ms ease-in-out;
+    -ms-transition: all 300ms ease-in-out;
+    transition: all 300ms ease-in-out;
+}
+
+.nav-btn:hover,
+.nav-btn:focus,
+.nav-btn:active{
+	background-color: #fff;
+}
+
+.nav a, 
+.nav a:link,
+.nav a:visited{
+	font-size:.8rem;
+	color: #303030;
+	padding: .5rem;
+	letter-spacing: .25px;
+	text-decoration: none;
+	-webkit-transition: all 300ms ease-in-out;
+    -moz-transition: all 300ms ease-in-out;
+    -o-transition: all 300ms ease-in-out;
+    -ms-transition: all 300ms ease-in-out;
+    transition: all 300ms ease-in-out;
+}
+
+.nav a:hover,
+.nav a:focus,
+.nav a:active{
+
+
+}
+
+/* Toggle */
+
+.nav-top{
+	display: none;
+}
+
+.nav-top[data-state="expanded"]{
+	display: block;
+}
+
+.mobile-logo {
+	height: 24px;
+	margin-top: 3px;
+	margin-right: 4px;
+	float: right;
+}
+
+.padding {
+    padding: 0 4%;
+}
+
+.banner-logo {
+	width: 50%;
+	margin-top: 3rem;
+}
+
+.push-top {
+	margin-top: 2rem;
+}
+
+@media only screen and (min-width: 38em) {
+	
+	.mobile-logo {
+		height: 1.5rem;
+		float: left;
+	}
+	
+	.nav-btn,
+	.nav-btn:link,
+	.nav-btn:visited{
+		display: none;
+	}
+	
+	.nav-top{
+		width: 50%;
+		display: inline-block;
+		overflow: auto;
+		float: right;
+	}
+	
+	.nav ul li {
+		display: inline-block;
+		float: right;
+	}
+	
+	.nav a, 
+	.nav a:link,
+	.nav a:visited{
+		background-color: transparent;
+		padding-left: 20px;
+	}
+    
+    .padding {
+        padding: 0 10%;
+    }
+    
+    #intro {
+        padding-right: 20%;   
+    }
+    
+    .banner-logo {
+        max-width: 26rem;
+        margin-top: 3rem;
+    }
+}
+
+/*Content under first fold*/
+
+.separate {
+	margin-top: 3rem;
+}
+
+.sm-bq {
+	position: relative;
+	padding-top: 1.2rem;
+	font-style: italic;
+	letter-spacing: 0.15px;
+}
+
+.right-bq:before, .sm-bq:before {
+	position: absolute;
+	top: -.25rem;
+	content: '';
+	height: 6px;
+	width: 200px;
+	color: #d5a734;
+	background-color: #d5a734;
+}
+
+.right-bq {
+    text-align: right;  
+}
+
+.right-bq:before {
+	right: 0;
+}
+
+.styled {
+	position: relative;
+	background: black url(../images/bq1.jpg);
+	background-size: cover;
+	background-position: center center;
+	padding: 6% 4%;
+	text-align: center;
+	color: #f3f3f3;
+}
+
+.portfolio-piece {
+    position: relative;
+    overflow: hidden;
+	height: 10rem;
+}
+
+.portfolio-info {
+    position: absolute;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0,0,0,.2);
+	color: white;
+	padding: 0 4%;
+}
+
+.pf-1 {
+	background: white url(../images/pf1.jpg);
+}
+
+.pf-2 {
+	background: white url(../images/pf2.jpg);
+}
+
+.pf-3 {
+	background: white url(../images/pf3.jpg);
+}
+
+.pf-4 {
+	background: white url(../images/pf4.jpg);
+}
+
+.pf-5 {
+	background: white url(../images/pf5.jpg);
+}
+
+.pf {
+	background-size: cover;
+	background-position: center center;
+	background-repeat: no-repeat;
+}
+
+.social-media {
+	list-style-type: none;
+	padding: 0;
+}
+
+@media only screen and (min-width: 38em) {
+	
+	.separate {
+		margin-top: 5rem;
+	}
+	
+    .portfolio-piece {
+        height: 15rem;
+    }
+	
+	.styled {
+		font-size: 1.999em;
+	}
+
+}
+
+@media only screen and (min-width: 60em) {
+	
+	.banner-logo {
+        margin-top: 8rem;
+    }
+	
+	.separate {
+		margin-top: 10rem;
+	}
+	
+	.right-bq {
+		margin-right: 20.00%;
+	}
+	
+	.portfolio-piece {
+        height: 30rem;
+    }
+	
 }
